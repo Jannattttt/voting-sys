@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&family=Roboto:wght@300;400;500&display=swap');
+
+/* Defining CSS variables for easy customization */
+:root {
+    --primary-color: #007BFF;
+    --primary-color-hover: #0056b3;
+    --background-color: #f4f4f4;
+    --text-color: #333;
+    --button-bg-color: #007BFF;
+    --button-text-color: white;
+    --button-hover-color: #0056b3;
+    --candidate-bg-color: #fff;
+    --candidate-border-color: #ddd;
+  }
+  
+  /* General body and layout styles */
+  body {
+    font-family: "Poppins", serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    width: 27%;
+    margin: auto;
+    padding-top: 75px;
+    padding-bottom: 130px;
+    text-align: center;
+    position: relative; /* Needed for profile button positioning */
+    background-color:#ffffffc2;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    margin-top: 150px;
+  }
+
+  .vote {
+    width: 80%;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  }
+  
+  /* Profile button at the top right */
+  .profile-btn {
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    width: 90px;
+    height: 40px;
+    padding: 5px 10px;
+    font-size: 18px;
+    background-color: var(--primary-color);
+    color: var(--button-text-color);
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .profile-btn:hover {
+    background-color: var(--primary-color-hover);
+  }
+  
+  /* Headings */
+  h1, h2 {
+    color: var(--text-color);
+    font-weight: 550;
+  }
+  
+  /* Category layout */
+  #presidentCategory, #secretaryCategory, #treasurerCategory {
+    margin: 20px 0;
+  }
+  
+  #presidentCategory h2,
+  #secretaryCategory h2,
+  #treasurerCategory h2 {
+    text-align: center;
+  }
+  
+  /* Flexbox for horizontal layout with wrapping */
+  #presidentCandidatesList,
+  #secretaryCandidatesList,
+  #treasurerCandidatesList {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 10px 0;
+  }
+  
+  /* Candidate card styles */
+  .candidate {
+    background-color: var(--candidate-bg-color);
+    border: 1px solid var(--candidate-border-color);
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Candidate hover effects */
+  .candidate:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .candidate img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  button {
+    background-color: var(--button-bg-color);
+    color: var(--button-text-color);
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: var(--button-hover-color);
+  }
+  
+  button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+
+  input {
+    width: 300px;
+      padding: 12px;
+      border: 2px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+      transition: border-color 0.3s ease, box-shadow 0.3s ease;
+      margin-bottom: 9px;
+  }
+  
+  /* Make sure the layout is responsive for smaller screens */
+  @media (max-width: 768px) {
+    .container {
+      width: 70%;
+      padding-top: 50px;
+      padding-bottom: 100px;
+    }
+
+    .container button {
+        width: 50%;
+    }
+
+    input {
+        width: 270px;
+    }
+  
+    /* Adjust candidate card sizes and layout for smaller devices */
+    .candidate {
+      width: 45%;
+      margin-bottom: 20px;
+    }
+  
+    button {
+      width: 100%; /* Make buttons full-width on smaller screens */
+    }
+  
+    /* Profile button adjustments */
+    .profile-btn {
+      font-size: 15px;
+      padding: 5px;
+      width: 75px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    /* Further adjustments for very small screens */
+    .candidate {
+      width: 100%;
+    }
+  }
+  

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Your Profile</h1>
+    <form id="changePasswordForm">
+        <div>
+            <input type="password" id="newPassword" placeholder="New Password" required>
+        </div>
+      <button type="submit">Change Password</button>
+    </form>
+    <p>Your current password is: <span id="currentPassword">********</span></p>
+    <button onclick="location.href='vote.html'">Go to Voting</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
