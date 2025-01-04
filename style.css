@@ -2,11 +2,11 @@
 
 /* Defining CSS variables for easy customization */
 :root {
-    --primary-color: #007BFF;
+    --primary-color: #282765;
     --primary-color-hover: #0056b3;
     --background-color: #f4f4f4;
     --text-color: #333;
-    --button-bg-color: #007BFF;
+    --button-bg-color: #282765;
     --button-text-color: white;
     --button-hover-color: #0056b3;
     --candidate-bg-color: #fff;
@@ -80,7 +80,7 @@
   /* Headings */
   h1, h2 {
     color: var(--text-color);
-    font-weight: 550;
+    font-weight: 600;
   }
   
   /* Category layout */

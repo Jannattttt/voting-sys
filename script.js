@@ -4,12 +4,12 @@ const studentsDB = [
   ];
   
   const candidatesDB = [
-    { id: 1, name: 'Alice', position: 'SRC President', votes: 0, img: 'images/alice.jpg', category: 'president' },
-    { id: 2, name: 'Bob', position: 'SRC President', votes: 0, img: 'images/bob.jpg', category: 'president' },
-    { id: 3, name: 'Charlie', position: 'SRC Secretary', votes: 0, img: 'images/charlie.jpg', category: 'secretary' },
-    { id: 4, name: 'David', position: 'SRC Secretary', votes: 0, img: 'images/david.jpg', category: 'secretary' },
-    { id: 5, name: 'Eva', position: 'SRC Treasurer', votes: 0, img: 'images/eva.jpg', category: 'treasurer' },
-    { id: 6, name: 'Frank', position: 'SRC Treasurer', votes: 0, img: 'images/frank.jpg', category: 'treasurer' }
+    { id: 1, name: 'Alice', position: 'SRC President', votes: 0, img: 'images/3.jpeg', category: 'president' },
+    { id: 2, name: 'Bob', position: 'SRC President', votes: 0, img: 'images/1.jpeg', category: 'president' },
+    { id: 3, name: 'Charlie', position: 'SRC Secretary', votes: 0, img: 'images/2.jpeg', category: 'secretary' },
+    { id: 4, name: 'David', position: 'SRC Secretary', votes: 0, img: 'images/6.jpeg', category: 'secretary' },
+    { id: 5, name: 'Eva', position: 'SRC Treasurer', votes: 0, img: 'images/4.jpeg', category: 'treasurer' },
+    { id: 6, name: 'Frank', position: 'SRC Treasurer', votes: 0, img: 'images/5.jpeg', category: 'treasurer' }
   ];
   
   // Handle login
