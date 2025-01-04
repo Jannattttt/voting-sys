@@ -202,11 +202,13 @@
     }
 
     .container {
-      width: 90%;
+      width: 80%;
       padding-top: 50px;
       padding-bottom: 100px;
       margin-bottom: 75px;
       position: fixed;
+      left: 43px;
+      bottom: 90px;
     }
 
     .container button {
