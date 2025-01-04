@@ -45,6 +45,18 @@
     border-radius: 15px;
     margin-top: 150px;
   }
+  
+  .containerr {
+    width: 27%;
+    margin: auto;
+    padding-top: 75px;
+    padding-bottom: 130px;
+    text-align: center;
+    background-color:#ffffffc2;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    margin-top: 150px;
+  }
 
   .vote {
     width: 80%;
@@ -205,15 +217,31 @@
     .container {
       width: 80%;
       padding-top: 50px;
-      padding-bottom: 80px;
+      padding-bottom: 65px;
       /* margin-bottom: 75px;  */
+      margin-top: 90px;
       position: fixed;
       left: 43px;
       top: 0;
-      bottom: 65px;
+      bottom: 80px;
+    }
+
+    .containerr {
+      width: 80%;
+      padding-top: 50px;
+      /* padding-bottom: 55px; */
+      /* margin-bottom: 75px;  */
+      margin-top: 90px;
+      position: fixed;
+      left: 43px;
+      top: 0;
+      bottom: 70px;
     }
 
     .container button {
+        width: 50%;
+    }
+    .containerr button {
         width: 50%;
     }
 
