@@ -166,6 +166,7 @@
       width: 70%;
       padding-top: 50px;
       padding-bottom: 100px;
+      position: fixed;
     }
 
     .container button {
@@ -201,10 +202,11 @@
     }
 
     .container {
-      width: 80%;
+      width: 90%;
       padding-top: 50px;
       padding-bottom: 100px;
       margin-bottom: 75px;
+      position: fixed;
     }
 
     .container button {
