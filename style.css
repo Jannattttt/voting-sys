@@ -186,5 +186,20 @@
     .candidate {
       width: 100%;
     }
+
+    .container {
+      width: 70%;
+      padding-top: 50px;
+      padding-bottom: 100px;
+      margin-bottom: 50px;
+    }
+
+    .container button {
+        width: 50%;
+    }
+
+    input {
+        width: 230px;
+    }
   }
   
