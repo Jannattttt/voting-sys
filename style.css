@@ -14,6 +14,21 @@
   }
   
   /* General body and layout styles */
+  .bground {
+    background-image: url(gctu.jpg);
+    /* position: relative; */
+    isolation: isolate;
+  }
+
+  .bground::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    background: white;
+    opacity: 0.85;
+  }
+
   body {
     font-family: "Poppins", serif;
     background-color: var(--background-color);
@@ -40,7 +55,8 @@
     padding-top: 75px;
     padding-bottom: 130px;
     text-align: center;
-    background-color:#ffffffc2;
+    /* background-color:#ffffffc2; */
+    background-color: #fff;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
     margin-top: 150px;
@@ -52,7 +68,8 @@
     padding-top: 75px;
     padding-bottom: 130px;
     text-align: center;
-    background-color:#ffffffc2;
+   /*  background-color:#ffffffc2; */
+   background-color: #fff;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
     margin-top: 150px;
